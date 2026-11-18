@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+build/
+dist/
+
+# Dados — reproduzíveis via `credit-monitor all` (não versionar dados, mesmo pseudonimizados)
+data/raw/
+data/processed/
+data/reference/
+data/production/
+data/quarantine/
+!data/**/.gitkeep
+
+# Artefatos de execução
+models/*.joblib
+mlflow.db
+mlartifacts/
+mlruns/
+# logs/*.jsonl são versionados de propósito: evidência da última execução do pipeline
+
+# Segredos
+.env
+*.key
+
+# IDE / SO
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+.claude/

@@ -1,0 +1,114 @@
+# =============================================================================
+# Configuração central do projeto credit-monitoring
+# Todos os scripts leem este arquivo, então nenhum "número mágico" fica no código.
+# =============================================================================
+
+project:
+  name: credit-scoring-monitoring
+  seed: 42
+
+paths:
+  raw_data: data/raw/credit_default_raw.csv
+  processed_data: data/processed/credit_clean.parquet
+  reference_data: data/reference/reference.parquet        # usado no treino (NUNCA muda)
+  reference_test: data/reference/reference_test.parquet   # holdout do treino (baseline de performance)
+  production_pool: data/production/pool.parquet           # dados "futuros", fonte da simulação
+  production_dir: data/production/batches                 # lotes mensais simulados (com drift)
+  quarantine_dir: data/quarantine                         # lotes bloqueados pelo contrato
+  model_dir: models
+  reports_dir: reports
+  logs_dir: logs
+
+dataset:
+  # Default of Credit Card Clients (Yeh & Lien, 2009), disponível no UCI ML Repository / OpenML id 42477
+  openml_id: 42477
+  source_url: https://archive.ics.uci.edu/dataset/350/default+of+credit+card+clients
+  target: default
+  reference_fraction: 0.6        # 60% referência (treino/teste) | 40% pool de produção
+  test_size: 0.25                # holdout dentro da referência
+
+# Atributos usados pelo modelo. Atributos sensíveis/protegidos ficam FORA
+# (sex, marriage) e são usados apenas para auditoria de viés.
+features:
+  numerical:
+    - limit_bal
+    - age
+    - bill_amt_1
+    - bill_amt_2
+    - bill_amt_3
+    - bill_amt_4
+    - bill_amt_5
+    - bill_amt_6
+    - pay_amt_1
+    - pay_amt_2
+    - pay_amt_3
+    - pay_amt_4
+    - pay_amt_5
+    - pay_amt_6
+  categorical:
+    - education
+    - pay_status_1
+    - pay_status_2
+    - pay_status_3
+    - pay_status_4
+    - pay_status_5
+    - pay_status_6
+  protected:          # nunca entram no modelo (Privacy/Fairness by Design)
+    - sex
+    - marriage
+
+model:
+  algorithm: xgboost
+  params:
+    n_estimators: 400
+    max_depth: 4
+    learning_rate: 0.05
+    subsample: 0.8
+    colsample_bytree: 0.8
+    min_child_weight: 5
+    reg_lambda: 1.0
+    eval_metric: auc
+  decision_threshold: auto   # "auto" = threshold que maximiza F1 no holdout
+
+# -----------------------------------------------------------------------------
+# Cenário macroeconômico simulado (6 meses de produção)
+# intensity ∈ [0, 1] escala todos os choques abaixo.
+# -----------------------------------------------------------------------------
+simulation:
+  start_month: "2026-01"
+  n_batches: 6
+  batch_size: 2000
+  intensity_schedule: [0.0, 0.1, 0.3, 0.5, 0.75, 1.0]
+  shocks:
+    inflation_bill_increase: 0.45      # +45% no valor das faturas (inflação acumulada)
+    limit_tightening: 0.30             # -30% no limite de crédito concedido (aperto de crédito)
+    payment_delay_share: 0.35          # 35% dos clientes passam a atrasar +1..+2 meses (desemprego)
+    young_customers_share: 0.40        # 40% da base substituída por novos clientes 21-30 anos
+    payment_capacity_drop: 0.35        # -35% nos valores pagos
+  concept_drift:
+    # P(default | X) muda: clientes "aparentemente bons" passam a inadimplir
+    # (renda real corroída pela inflação), e o modelo não enxerga essa mudança.
+    flip_share: 0.25                   # até 25% dos adimplentes com alta utilização viram default
+    utilization_threshold: 0.5
+
+# -----------------------------------------------------------------------------
+# Regras de alerta (observabilidade)
+# -----------------------------------------------------------------------------
+monitoring:
+  drift_method_numerical: psi        # PSI (estatística padrão de mercado em crédito)
+  drift_method_categorical: psi
+  psi_warning: 0.10
+  psi_critical: 0.25
+  ks_pvalue: 0.05
+  dataset_drift_share: 0.30          # alerta se >= 30% das features derivarem
+  auc_drop_warning: 0.03
+  auc_drop_critical: 0.07
+  default_rate_change_critical: 0.05 # +5 p.p. na taxa de default observada
+  prediction_psi_critical: 0.20      # drift na distribuição do score
+  fairness_di_min: 0.80              # regra dos 4/5 (Disparate Impact)
+
+mlflow:
+  tracking_uri: sqlite:///mlflow.db
+  training_experiment: credit-scoring-training
+  monitoring_experiment: credit-scoring-monitoring
+  registered_model_name: credit-scoring-xgb

@@ -1,0 +1,9 @@
+# Normaliza finais de linha (LF no repositório) independente do sistema operacional
+* text=auto eol=lf
+
+# Arquivos gerados: não mostrar diff linha a linha
+reports/**/*.html linguist-generated=true -diff
+logs/*.jsonl linguist-generated=true
+
+*.parquet binary
+*.joblib binary
