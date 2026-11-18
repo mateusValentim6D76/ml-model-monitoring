@@ -1,0 +1,7 @@
+{
+  "batch": "reference_test",
+  "passed": true,
+  "n_rows": 4495,
+  "violations": 0,
+  "rules_violated": []
+}

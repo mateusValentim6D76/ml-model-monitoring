@@ -1,0 +1,7 @@
+{
+  "batch": "demo_clean_batch",
+  "passed": true,
+  "n_rows": 1000,
+  "violations": 0,
+  "rules_violated": []
+}

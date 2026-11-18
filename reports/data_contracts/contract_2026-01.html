@@ -1,0 +1,30 @@
+<!doctype html><html lang="pt-br"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Data Contract: 2026-01</title>
+<style>
+ body{font-family:Segoe UI,Roboto,Helvetica,Arial,sans-serif;margin:0;background:#f6f8fa;color:#1f2328}
+ main{max-width:1100px;margin:auto;padding:24px 16px}
+ .badge{display:inline-block;padding:6px 14px;border-radius:999px;color:#fff;font-weight:600;background:#1a7f37}
+ .card{background:#fff;border:1px solid #d0d7de;border-radius:10px;padding:16px 20px;margin:16px 0;overflow-x:auto}
+ table{border-collapse:collapse;width:100%;font-size:14px}
+ th,td{text-align:left;padding:8px 10px;border-bottom:1px solid #eaeef2;vertical-align:top}
+ th{background:#f6f8fa} .ok{color:#1a7f37;font-weight:600} .ko{color:#cf222e;font-weight:600}
+ .kpis{display:flex;gap:16px;flex-wrap:wrap} .kpi{flex:1;min-width:160px}
+ .kpi b{font-size:26px;display:block}
+</style></head><body><main>
+<h1>Data Contract <code>credit_scoring_contract_v1</code></h1>
+<p>Lote: <b>2026-01</b> &nbsp; <span class="badge">APROVADO</span></p>
+<div class="card kpis">
+ <div class="kpi">Registros no lote<b>1,997</b></div>
+ <div class="kpi">Violações encontradas<b>0</b></div>
+ <div class="kpi">Regras violadas<b>0 / 10</b></div>
+ <div class="kpi">Colunas recebidas<b>24</b></div>
+</div>
+<div class="card"><h2>Regras do contrato</h2>
+<table><tr><th>Regra</th><th>Descrição</th><th>Status</th><th>Violações</th></tr><tr><td><b>R1</b></td><td>Nenhum valor nulo</td><td class='ok'>✔ OK</td><td>0</td></tr><tr><td><b>R2</b></td><td>Idade entre 18 e 100 anos</td><td class='ok'>✔ OK</td><td>0</td></tr><tr><td><b>R3</b></td><td>Limite de crédito entre 10,000 e 1,000,000</td><td class='ok'>✔ OK</td><td>0</td></tr><tr><td><b>R4</b></td><td>Sem registros duplicados</td><td class='ok'>✔ OK</td><td>0</td></tr><tr><td><b>R5</b></td><td>customer_id único e pseudonimizado (cus_&lt;hmac&gt;)</td><td class='ok'>✔ OK</td><td>0</td></tr><tr><td><b>R6</b></td><td>Domínios categóricos válidos</td><td class='ok'>✔ OK</td><td>0</td></tr><tr><td><b>R7</b></td><td>Valores monetários dentro de limites (pagamentos &gt;= 0)</td><td class='ok'>✔ OK</td><td>0</td></tr><tr><td><b>R8</b></td><td>Schema estrito: sem colunas extras (ex.: PII)</td><td class='ok'>✔ OK</td><td>0</td></tr><tr><td><b>R9</b></td><td>Tipos inteiros sem coerção</td><td class='ok'>✔ OK</td><td>0</td></tr><tr><td><b>R10</b></td><td>Lote com &gt;= 100 registros</td><td class='ok'>✔ OK</td><td>0</td></tr></table></div>
+
+<div class="card"><h2>Política aplicada</h2>
+<p>O lote seguiu para inferência.</p>
+</div>
+<p style="color:#59636e;font-size:12px">Gerado em 2026-11-17 23:51 UTC</p>
+</main></body></html>

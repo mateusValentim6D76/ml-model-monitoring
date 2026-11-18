@@ -1,0 +1,275 @@
+{"timestamp": "2026-11-17T23:51:06.773+00:00", "run_id": "20261117T235103-d28f50", "metric": "ingest_duplicates_removed", "value": 35.0, "batch": null}
+{"timestamp": "2026-11-17T23:51:07.036+00:00", "run_id": "20261117T235103-d28f50", "metric": "reference_rows", "value": 13484.0, "batch": null}
+{"timestamp": "2026-11-17T23:51:07.037+00:00", "run_id": "20261117T235103-d28f50", "metric": "reference_default_rate", "value": 0.22122515574013646, "batch": null}
+{"timestamp": "2026-11-17T23:51:07.891+00:00", "run_id": "20261117T235103-d28f50", "metric": "contract_passed", "value": 1.0, "batch": "reference_train"}
+{"timestamp": "2026-11-17T23:51:07.893+00:00", "run_id": "20261117T235103-d28f50", "metric": "contract_violations", "value": 0.0, "batch": "reference_train"}
+{"timestamp": "2026-11-17T23:51:07.894+00:00", "run_id": "20261117T235103-d28f50", "metric": "contract_rules_violated", "value": 0.0, "batch": "reference_train"}
+{"timestamp": "2026-11-17T23:51:07.945+00:00", "run_id": "20261117T235103-d28f50", "metric": "contract_passed", "value": 1.0, "batch": "reference_test"}
+{"timestamp": "2026-11-17T23:51:07.946+00:00", "run_id": "20261117T235103-d28f50", "metric": "contract_violations", "value": 0.0, "batch": "reference_test"}
+{"timestamp": "2026-11-17T23:51:07.946+00:00", "run_id": "20261117T235103-d28f50", "metric": "contract_rules_violated", "value": 0.0, "batch": "reference_test"}
+{"timestamp": "2026-11-17T23:51:10.308+00:00", "run_id": "20261117T235103-d28f50", "metric": "reference_auc", "value": 0.7696598707824839, "batch": "reference"}
+{"timestamp": "2026-11-17T23:51:10.308+00:00", "run_id": "20261117T235103-d28f50", "metric": "reference_gini", "value": 0.5393197415649678, "batch": "reference"}
+{"timestamp": "2026-11-17T23:51:10.309+00:00", "run_id": "20261117T235103-d28f50", "metric": "reference_ks", "value": 0.4132204055786133, "batch": "reference"}
+{"timestamp": "2026-11-17T23:51:10.309+00:00", "run_id": "20261117T235103-d28f50", "metric": "reference_pr_auc", "value": 0.5364992075245867, "batch": "reference"}
+{"timestamp": "2026-11-17T23:51:10.310+00:00", "run_id": "20261117T235103-d28f50", "metric": "reference_f1", "value": 0.5399698340874811, "batch": "reference"}
+{"timestamp": "2026-11-17T23:51:10.310+00:00", "run_id": "20261117T235103-d28f50", "metric": "reference_precision", "value": 0.540241448692153, "batch": "reference"}
+{"timestamp": "2026-11-17T23:51:10.311+00:00", "run_id": "20261117T235103-d28f50", "metric": "reference_recall", "value": 0.5396984924623116, "batch": "reference"}
+{"timestamp": "2026-11-17T23:51:10.311+00:00", "run_id": "20261117T235103-d28f50", "metric": "reference_brier", "value": 0.13799412548542023, "batch": "reference"}
+{"timestamp": "2026-11-17T23:51:10.312+00:00", "run_id": "20261117T235103-d28f50", "metric": "reference_default_rate", "value": 0.22135706340378197, "batch": "reference"}
+{"timestamp": "2026-11-17T23:51:10.312+00:00", "run_id": "20261117T235103-d28f50", "metric": "reference_predicted_default_rate", "value": 0.2211345939933259, "batch": "reference"}
+{"timestamp": "2026-11-17T23:51:10.312+00:00", "run_id": "20261117T235103-d28f50", "metric": "reference_mean_score", "value": 0.22129228711128235, "batch": "reference"}
+{"timestamp": "2026-11-17T23:51:22.924+00:00", "run_id": "20261117T235103-d28f50", "metric": "contract_passed", "value": 1.0, "batch": "demo_clean_batch"}
+{"timestamp": "2026-11-17T23:51:22.925+00:00", "run_id": "20261117T235103-d28f50", "metric": "contract_violations", "value": 0.0, "batch": "demo_clean_batch"}
+{"timestamp": "2026-11-17T23:51:22.925+00:00", "run_id": "20261117T235103-d28f50", "metric": "contract_rules_violated", "value": 0.0, "batch": "demo_clean_batch"}
+{"timestamp": "2026-11-17T23:51:23.074+00:00", "run_id": "20261117T235103-d28f50", "metric": "contract_passed", "value": 0.0, "batch": "demo_corrupted_batch"}
+{"timestamp": "2026-11-17T23:51:23.075+00:00", "run_id": "20261117T235103-d28f50", "metric": "contract_violations", "value": 869.0, "batch": "demo_corrupted_batch"}
+{"timestamp": "2026-11-17T23:51:23.075+00:00", "run_id": "20261117T235103-d28f50", "metric": "contract_rules_violated", "value": 9.0, "batch": "demo_corrupted_batch"}
+{"timestamp": "2026-11-17T23:51:23.139+00:00", "run_id": "20261117T235103-d28f50", "metric": "simulated_intensity", "value": 0.0, "batch": "2026-01"}
+{"timestamp": "2026-11-17T23:51:23.140+00:00", "run_id": "20261117T235103-d28f50", "metric": "observed_default_rate", "value": 0.2213319979969955, "batch": "2026-01"}
+{"timestamp": "2026-11-17T23:51:23.168+00:00", "run_id": "20261117T235103-d28f50", "metric": "simulated_intensity", "value": 0.1, "batch": "2026-02"}
+{"timestamp": "2026-11-17T23:51:23.169+00:00", "run_id": "20261117T235103-d28f50", "metric": "observed_default_rate", "value": 0.2443665498247371, "batch": "2026-02"}
+{"timestamp": "2026-11-17T23:51:23.198+00:00", "run_id": "20261117T235103-d28f50", "metric": "simulated_intensity", "value": 0.3, "batch": "2026-03"}
+{"timestamp": "2026-11-17T23:51:23.199+00:00", "run_id": "20261117T235103-d28f50", "metric": "observed_default_rate", "value": 0.2884326489734602, "batch": "2026-03"}
+{"timestamp": "2026-11-17T23:51:23.272+00:00", "run_id": "20261117T235103-d28f50", "metric": "simulated_intensity", "value": 0.5, "batch": "2026-04"}
+{"timestamp": "2026-11-17T23:51:23.273+00:00", "run_id": "20261117T235103-d28f50", "metric": "observed_default_rate", "value": 0.3390085127691537, "batch": "2026-04"}
+{"timestamp": "2026-11-17T23:51:23.300+00:00", "run_id": "20261117T235103-d28f50", "metric": "simulated_intensity", "value": 0.75, "batch": "2026-05"}
+{"timestamp": "2026-11-17T23:51:23.301+00:00", "run_id": "20261117T235103-d28f50", "metric": "observed_default_rate", "value": 0.3895843765648473, "batch": "2026-05"}
+{"timestamp": "2026-11-17T23:51:23.329+00:00", "run_id": "20261117T235103-d28f50", "metric": "simulated_intensity", "value": 1.0, "batch": "2026-06"}
+{"timestamp": "2026-11-17T23:51:23.330+00:00", "run_id": "20261117T235103-d28f50", "metric": "observed_default_rate", "value": 0.45468202303455185, "batch": "2026-06"}
+{"timestamp": "2026-11-17T23:51:23.599+00:00", "run_id": "20261117T235103-d28f50", "metric": "contract_passed", "value": 1.0, "batch": "2026-01"}
+{"timestamp": "2026-11-17T23:51:23.600+00:00", "run_id": "20261117T235103-d28f50", "metric": "contract_violations", "value": 0.0, "batch": "2026-01"}
+{"timestamp": "2026-11-17T23:51:23.600+00:00", "run_id": "20261117T235103-d28f50", "metric": "contract_rules_violated", "value": 0.0, "batch": "2026-01"}
+{"timestamp": "2026-11-17T23:51:23.623+00:00", "run_id": "20261117T235103-d28f50", "metric": "rows_scored", "value": 1997.0, "batch": "2026-01"}
+{"timestamp": "2026-11-17T23:51:23.624+00:00", "run_id": "20261117T235103-d28f50", "metric": "approval_rate", "value": 0.7766649974962444, "batch": "2026-01"}
+{"timestamp": "2026-11-17T23:51:29.839+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.012542495298492558, "batch": "2026-01", "feature": "pay_status_3"}
+{"timestamp": "2026-11-17T23:51:29.840+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.011417336382283401, "batch": "2026-01", "feature": "limit_bal"}
+{"timestamp": "2026-11-17T23:51:29.840+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.00980197900113713, "batch": "2026-01", "feature": "pay_status_4"}
+{"timestamp": "2026-11-17T23:51:29.840+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.00844450549840014, "batch": "2026-01", "feature": "bill_amt_1"}
+{"timestamp": "2026-11-17T23:51:29.841+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.00840671944692437, "batch": "2026-01", "feature": "pay_status_2"}
+{"timestamp": "2026-11-17T23:51:29.841+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.008018636383239068, "batch": "2026-01", "feature": "pay_amt_5"}
+{"timestamp": "2026-11-17T23:51:29.842+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.007611852934197692, "batch": "2026-01", "feature": "pay_amt_3"}
+{"timestamp": "2026-11-17T23:51:29.842+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.007489195115336829, "batch": "2026-01", "feature": "age"}
+{"timestamp": "2026-11-17T23:51:29.842+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.0073236357464233435, "batch": "2026-01", "feature": "bill_amt_6"}
+{"timestamp": "2026-11-17T23:51:29.843+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.006366621726050003, "batch": "2026-01", "feature": "bill_amt_3"}
+{"timestamp": "2026-11-17T23:51:29.843+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.006206091343047952, "batch": "2026-01", "feature": "bill_amt_5"}
+{"timestamp": "2026-11-17T23:51:29.844+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.005888678363442033, "batch": "2026-01", "feature": "bill_amt_2"}
+{"timestamp": "2026-11-17T23:51:29.844+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.005621293048852046, "batch": "2026-01", "feature": "bill_amt_4"}
+{"timestamp": "2026-11-17T23:51:29.844+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.005165116403866075, "batch": "2026-01", "feature": "pay_amt_4"}
+{"timestamp": "2026-11-17T23:51:29.845+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.004902274793976604, "batch": "2026-01", "feature": "pay_status_1"}
+{"timestamp": "2026-11-17T23:51:29.845+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.004880314797465971, "batch": "2026-01", "feature": "pay_amt_2"}
+{"timestamp": "2026-11-17T23:51:29.845+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.004807184754115996, "batch": "2026-01", "feature": "pay_status_6"}
+{"timestamp": "2026-11-17T23:51:29.846+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.004622964020132724, "batch": "2026-01", "feature": "pay_amt_6"}
+{"timestamp": "2026-11-17T23:51:29.846+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.004368487654513533, "batch": "2026-01", "feature": "pay_amt_1"}
+{"timestamp": "2026-11-17T23:51:29.847+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.0021025754969845488, "batch": "2026-01", "feature": "pay_status_5"}
+{"timestamp": "2026-11-17T23:51:29.847+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.0012529695338155044, "batch": "2026-01", "feature": "education"}
+{"timestamp": "2026-11-17T23:51:29.847+00:00", "run_id": "20261117T235103-d28f50", "metric": "dataset_drift_share", "value": 0.0, "batch": "2026-01"}
+{"timestamp": "2026-11-17T23:51:29.848+00:00", "run_id": "20261117T235103-d28f50", "metric": "prediction_psi", "value": 0.014368934297367165, "batch": "2026-01"}
+{"timestamp": "2026-11-17T23:51:29.913+00:00", "run_id": "20261117T235103-d28f50", "metric": "perf_auc", "value": 0.7727335554553258, "batch": "2026-01"}
+{"timestamp": "2026-11-17T23:51:29.913+00:00", "run_id": "20261117T235103-d28f50", "metric": "perf_ks", "value": 0.41550102829933167, "batch": "2026-01"}
+{"timestamp": "2026-11-17T23:51:29.914+00:00", "run_id": "20261117T235103-d28f50", "metric": "perf_f1", "value": 0.5247747747747747, "batch": "2026-01"}
+{"timestamp": "2026-11-17T23:51:29.914+00:00", "run_id": "20261117T235103-d28f50", "metric": "perf_recall", "value": 0.5271493212669683, "batch": "2026-01"}
+{"timestamp": "2026-11-17T23:51:29.915+00:00", "run_id": "20261117T235103-d28f50", "metric": "perf_precision", "value": 0.5224215246636771, "batch": "2026-01"}
+{"timestamp": "2026-11-17T23:51:29.915+00:00", "run_id": "20261117T235103-d28f50", "metric": "perf_default_rate", "value": 0.2213319979969955, "batch": "2026-01"}
+{"timestamp": "2026-11-17T23:51:29.916+00:00", "run_id": "20261117T235103-d28f50", "metric": "perf_brier", "value": 0.1378968507051468, "batch": "2026-01"}
+{"timestamp": "2026-11-17T23:51:29.937+00:00", "run_id": "20261117T235103-d28f50", "metric": "fairness_di_age_band", "value": 0.8948431654676259, "batch": "2026-01"}
+{"timestamp": "2026-11-17T23:51:29.937+00:00", "run_id": "20261117T235103-d28f50", "metric": "fairness_eo_gap_age_band", "value": 0.12371995820271686, "batch": "2026-01"}
+{"timestamp": "2026-11-17T23:51:29.938+00:00", "run_id": "20261117T235103-d28f50", "metric": "fairness_di_sex", "value": 0.9570599498315349, "batch": "2026-01"}
+{"timestamp": "2026-11-17T23:51:29.938+00:00", "run_id": "20261117T235103-d28f50", "metric": "fairness_eo_gap_sex", "value": 0.019230769230769162, "batch": "2026-01"}
+{"timestamp": "2026-11-17T23:51:29.977+00:00", "run_id": "20261117T235103-d28f50", "metric": "contract_passed", "value": 1.0, "batch": "2026-02"}
+{"timestamp": "2026-11-17T23:51:29.978+00:00", "run_id": "20261117T235103-d28f50", "metric": "contract_violations", "value": 0.0, "batch": "2026-02"}
+{"timestamp": "2026-11-17T23:51:29.979+00:00", "run_id": "20261117T235103-d28f50", "metric": "contract_rules_violated", "value": 0.0, "batch": "2026-02"}
+{"timestamp": "2026-11-17T23:51:30.003+00:00", "run_id": "20261117T235103-d28f50", "metric": "rows_scored", "value": 1997.0, "batch": "2026-02"}
+{"timestamp": "2026-11-17T23:51:30.004+00:00", "run_id": "20261117T235103-d28f50", "metric": "approval_rate", "value": 0.7441161742613921, "batch": "2026-02"}
+{"timestamp": "2026-11-17T23:51:31.791+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.0788969909441376, "batch": "2026-02", "feature": "pay_status_3"}
+{"timestamp": "2026-11-17T23:51:31.792+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.07192438768912403, "batch": "2026-02", "feature": "pay_amt_5"}
+{"timestamp": "2026-11-17T23:51:31.792+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.06456232541878043, "batch": "2026-02", "feature": "pay_amt_6"}
+{"timestamp": "2026-11-17T23:51:31.793+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.053386723853410506, "batch": "2026-02", "feature": "pay_amt_4"}
+{"timestamp": "2026-11-17T23:51:31.793+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.047334902920193135, "batch": "2026-02", "feature": "pay_status_2"}
+{"timestamp": "2026-11-17T23:51:31.794+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.02975270598866822, "batch": "2026-02", "feature": "limit_bal"}
+{"timestamp": "2026-11-17T23:51:31.794+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.02524778860654731, "batch": "2026-02", "feature": "pay_amt_2"}
+{"timestamp": "2026-11-17T23:51:31.795+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.013015322867561848, "batch": "2026-02", "feature": "pay_status_1"}
+{"timestamp": "2026-11-17T23:51:31.795+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.011361126839396081, "batch": "2026-02", "feature": "pay_amt_1"}
+{"timestamp": "2026-11-17T23:51:31.796+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.008441198875279438, "batch": "2026-02", "feature": "pay_amt_3"}
+{"timestamp": "2026-11-17T23:51:31.796+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.006935293630755132, "batch": "2026-02", "feature": "bill_amt_1"}
+{"timestamp": "2026-11-17T23:51:31.796+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.006611939834897506, "batch": "2026-02", "feature": "bill_amt_2"}
+{"timestamp": "2026-11-17T23:51:31.797+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.0060003661709600985, "batch": "2026-02", "feature": "age"}
+{"timestamp": "2026-11-17T23:51:31.797+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.003847805129829387, "batch": "2026-02", "feature": "pay_status_4"}
+{"timestamp": "2026-11-17T23:51:31.798+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.0029222234806791057, "batch": "2026-02", "feature": "bill_amt_6"}
+{"timestamp": "2026-11-17T23:51:31.798+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.002701294425055329, "batch": "2026-02", "feature": "bill_amt_5"}
+{"timestamp": "2026-11-17T23:51:31.799+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.0024873289629878063, "batch": "2026-02", "feature": "bill_amt_3"}
+{"timestamp": "2026-11-17T23:51:31.799+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.0019310946207855412, "batch": "2026-02", "feature": "pay_status_6"}
+{"timestamp": "2026-11-17T23:51:31.799+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.0018658141027303298, "batch": "2026-02", "feature": "bill_amt_4"}
+{"timestamp": "2026-11-17T23:51:31.800+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.0018290162150588925, "batch": "2026-02", "feature": "pay_status_5"}
+{"timestamp": "2026-11-17T23:51:31.800+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.0006991094301528782, "batch": "2026-02", "feature": "education"}
+{"timestamp": "2026-11-17T23:51:31.801+00:00", "run_id": "20261117T235103-d28f50", "metric": "dataset_drift_share", "value": 0.0, "batch": "2026-02"}
+{"timestamp": "2026-11-17T23:51:31.801+00:00", "run_id": "20261117T235103-d28f50", "metric": "prediction_psi", "value": 0.015902160858464916, "batch": "2026-02"}
+{"timestamp": "2026-11-17T23:51:31.854+00:00", "run_id": "20261117T235103-d28f50", "metric": "perf_auc", "value": 0.7653552727351736, "batch": "2026-02"}
+{"timestamp": "2026-11-17T23:51:31.854+00:00", "run_id": "20261117T235103-d28f50", "metric": "perf_ks", "value": 0.4080747663974762, "batch": "2026-02"}
+{"timestamp": "2026-11-17T23:51:31.855+00:00", "run_id": "20261117T235103-d28f50", "metric": "perf_f1", "value": 0.5425425425425425, "batch": "2026-02"}
+{"timestamp": "2026-11-17T23:51:31.855+00:00", "run_id": "20261117T235103-d28f50", "metric": "perf_recall", "value": 0.555327868852459, "batch": "2026-02"}
+{"timestamp": "2026-11-17T23:51:31.856+00:00", "run_id": "20261117T235103-d28f50", "metric": "perf_precision", "value": 0.5303326810176126, "batch": "2026-02"}
+{"timestamp": "2026-11-17T23:51:31.856+00:00", "run_id": "20261117T235103-d28f50", "metric": "perf_default_rate", "value": 0.2443665498247371, "batch": "2026-02"}
+{"timestamp": "2026-11-17T23:51:31.857+00:00", "run_id": "20261117T235103-d28f50", "metric": "perf_brier", "value": 0.1480240374803543, "batch": "2026-02"}
+{"timestamp": "2026-11-17T23:51:31.875+00:00", "run_id": "20261117T235103-d28f50", "metric": "fairness_di_age_band", "value": 0.805376211851032, "batch": "2026-02"}
+{"timestamp": "2026-11-17T23:51:31.876+00:00", "run_id": "20261117T235103-d28f50", "metric": "fairness_eo_gap_age_band", "value": 0.0977355977355977, "batch": "2026-02"}
+{"timestamp": "2026-11-17T23:51:31.877+00:00", "run_id": "20261117T235103-d28f50", "metric": "fairness_di_sex", "value": 0.8969940561200201, "batch": "2026-02"}
+{"timestamp": "2026-11-17T23:51:31.877+00:00", "run_id": "20261117T235103-d28f50", "metric": "fairness_eo_gap_sex", "value": 0.01145796201049043, "batch": "2026-02"}
+{"timestamp": "2026-11-17T23:51:31.909+00:00", "run_id": "20261117T235103-d28f50", "metric": "contract_passed", "value": 1.0, "batch": "2026-03"}
+{"timestamp": "2026-11-17T23:51:31.910+00:00", "run_id": "20261117T235103-d28f50", "metric": "contract_violations", "value": 0.0, "batch": "2026-03"}
+{"timestamp": "2026-11-17T23:51:31.911+00:00", "run_id": "20261117T235103-d28f50", "metric": "contract_rules_violated", "value": 0.0, "batch": "2026-03"}
+{"timestamp": "2026-11-17T23:51:31.963+00:00", "run_id": "20261117T235103-d28f50", "metric": "rows_scored", "value": 1997.0, "batch": "2026-03"}
+{"timestamp": "2026-11-17T23:51:31.964+00:00", "run_id": "20261117T235103-d28f50", "metric": "approval_rate", "value": 0.7060590886329494, "batch": "2026-03"}
+{"timestamp": "2026-11-17T23:51:33.773+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.2645247680761436, "batch": "2026-03", "feature": "pay_status_3"}
+{"timestamp": "2026-11-17T23:51:33.774+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.17523167699281025, "batch": "2026-03", "feature": "pay_status_2"}
+{"timestamp": "2026-11-17T23:51:33.774+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.12151770286948615, "batch": "2026-03", "feature": "limit_bal"}
+{"timestamp": "2026-11-17T23:51:33.775+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.07570816104475572, "batch": "2026-03", "feature": "pay_amt_4"}
+{"timestamp": "2026-11-17T23:51:33.775+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.06511968659327386, "batch": "2026-03", "feature": "pay_amt_5"}
+{"timestamp": "2026-11-17T23:51:33.776+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.05694597939071784, "batch": "2026-03", "feature": "pay_amt_6"}
+{"timestamp": "2026-11-17T23:51:33.776+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.052145961722645566, "batch": "2026-03", "feature": "pay_amt_3"}
+{"timestamp": "2026-11-17T23:51:33.777+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.04937477218790447, "batch": "2026-03", "feature": "pay_status_1"}
+{"timestamp": "2026-11-17T23:51:33.777+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.049120757443294166, "batch": "2026-03", "feature": "pay_amt_2"}
+{"timestamp": "2026-11-17T23:51:33.777+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.038695621201670596, "batch": "2026-03", "feature": "age"}
+{"timestamp": "2026-11-17T23:51:33.778+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.025766333017733952, "batch": "2026-03", "feature": "bill_amt_1"}
+{"timestamp": "2026-11-17T23:51:33.778+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.014414690599400528, "batch": "2026-03", "feature": "pay_amt_1"}
+{"timestamp": "2026-11-17T23:51:33.779+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.012438304993926376, "batch": "2026-03", "feature": "bill_amt_2"}
+{"timestamp": "2026-11-17T23:51:33.779+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.011655953660573773, "batch": "2026-03", "feature": "pay_status_4"}
+{"timestamp": "2026-11-17T23:51:33.780+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.010514357360385074, "batch": "2026-03", "feature": "bill_amt_5"}
+{"timestamp": "2026-11-17T23:51:33.780+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.009767912796070167, "batch": "2026-03", "feature": "pay_status_5"}
+{"timestamp": "2026-11-17T23:51:33.780+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.009127774954958666, "batch": "2026-03", "feature": "pay_status_6"}
+{"timestamp": "2026-11-17T23:51:33.781+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.008793572514385062, "batch": "2026-03", "feature": "bill_amt_4"}
+{"timestamp": "2026-11-17T23:51:33.781+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.008660766184947299, "batch": "2026-03", "feature": "bill_amt_3"}
+{"timestamp": "2026-11-17T23:51:33.782+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.008545179630066423, "batch": "2026-03", "feature": "bill_amt_6"}
+{"timestamp": "2026-11-17T23:51:33.782+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.0020615044142649605, "batch": "2026-03", "feature": "education"}
+{"timestamp": "2026-11-17T23:51:33.782+00:00", "run_id": "20261117T235103-d28f50", "metric": "dataset_drift_share", "value": 0.14285714285714285, "batch": "2026-03"}
+{"timestamp": "2026-11-17T23:51:33.783+00:00", "run_id": "20261117T235103-d28f50", "metric": "prediction_psi", "value": 0.0751107568352794, "batch": "2026-03"}
+{"timestamp": "2026-11-17T23:51:33.824+00:00", "run_id": "20261117T235103-d28f50", "metric": "perf_auc", "value": 0.7161940925795606, "batch": "2026-03"}
+{"timestamp": "2026-11-17T23:51:33.825+00:00", "run_id": "20261117T235103-d28f50", "metric": "perf_ks", "value": 0.3412393033504486, "batch": "2026-03"}
+{"timestamp": "2026-11-17T23:51:33.825+00:00", "run_id": "20261117T235103-d28f50", "metric": "perf_f1", "value": 0.524505588993981, "batch": "2026-03"}
+{"timestamp": "2026-11-17T23:51:33.826+00:00", "run_id": "20261117T235103-d28f50", "metric": "perf_recall", "value": 0.5295138888888888, "batch": "2026-03"}
+{"timestamp": "2026-11-17T23:51:33.826+00:00", "run_id": "20261117T235103-d28f50", "metric": "perf_precision", "value": 0.5195911413969335, "batch": "2026-03"}
+{"timestamp": "2026-11-17T23:51:33.826+00:00", "run_id": "20261117T235103-d28f50", "metric": "perf_default_rate", "value": 0.2884326489734602, "batch": "2026-03"}
+{"timestamp": "2026-11-17T23:51:33.827+00:00", "run_id": "20261117T235103-d28f50", "metric": "perf_brier", "value": 0.17977622151374817, "batch": "2026-03"}
+{"timestamp": "2026-11-17T23:51:33.843+00:00", "run_id": "20261117T235103-d28f50", "metric": "fairness_di_age_band", "value": 0.8665693735015115, "batch": "2026-03"}
+{"timestamp": "2026-11-17T23:51:33.844+00:00", "run_id": "20261117T235103-d28f50", "metric": "fairness_eo_gap_age_band", "value": 0.1264292408622305, "batch": "2026-03"}
+{"timestamp": "2026-11-17T23:51:33.844+00:00", "run_id": "20261117T235103-d28f50", "metric": "fairness_di_sex", "value": 0.9709457062393515, "batch": "2026-03"}
+{"timestamp": "2026-11-17T23:51:33.845+00:00", "run_id": "20261117T235103-d28f50", "metric": "fairness_eo_gap_sex", "value": 0.018641233665696366, "batch": "2026-03"}
+{"timestamp": "2026-11-17T23:51:33.977+00:00", "run_id": "20261117T235103-d28f50", "metric": "contract_passed", "value": 0.0, "batch": "2026-03-incident"}
+{"timestamp": "2026-11-17T23:51:33.977+00:00", "run_id": "20261117T235103-d28f50", "metric": "contract_violations", "value": 868.0, "batch": "2026-03-incident"}
+{"timestamp": "2026-11-17T23:51:33.978+00:00", "run_id": "20261117T235103-d28f50", "metric": "contract_rules_violated", "value": 9.0, "batch": "2026-03-incident"}
+{"timestamp": "2026-11-17T23:51:34.037+00:00", "run_id": "20261117T235103-d28f50", "metric": "contract_passed", "value": 1.0, "batch": "2026-04"}
+{"timestamp": "2026-11-17T23:51:34.037+00:00", "run_id": "20261117T235103-d28f50", "metric": "contract_violations", "value": 0.0, "batch": "2026-04"}
+{"timestamp": "2026-11-17T23:51:34.038+00:00", "run_id": "20261117T235103-d28f50", "metric": "contract_rules_violated", "value": 0.0, "batch": "2026-04"}
+{"timestamp": "2026-11-17T23:51:34.058+00:00", "run_id": "20261117T235103-d28f50", "metric": "rows_scored", "value": 1997.0, "batch": "2026-04"}
+{"timestamp": "2026-11-17T23:51:34.059+00:00", "run_id": "20261117T235103-d28f50", "metric": "approval_rate", "value": 0.6940410615923887, "batch": "2026-04"}
+{"timestamp": "2026-11-17T23:51:35.942+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.46585051977635555, "batch": "2026-04", "feature": "pay_status_3"}
+{"timestamp": "2026-11-17T23:51:35.943+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.3288477778081661, "batch": "2026-04", "feature": "limit_bal"}
+{"timestamp": "2026-11-17T23:51:35.943+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.32011055075003286, "batch": "2026-04", "feature": "pay_status_2"}
+{"timestamp": "2026-11-17T23:51:35.944+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.10146740303628113, "batch": "2026-04", "feature": "pay_amt_5"}
+{"timestamp": "2026-11-17T23:51:35.944+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.09352207170783453, "batch": "2026-04", "feature": "pay_amt_4"}
+{"timestamp": "2026-11-17T23:51:35.945+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.09051128454518606, "batch": "2026-04", "feature": "pay_amt_6"}
+{"timestamp": "2026-11-17T23:51:35.945+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.08358812827116421, "batch": "2026-04", "feature": "pay_status_1"}
+{"timestamp": "2026-11-17T23:51:35.946+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.07330071918049541, "batch": "2026-04", "feature": "pay_amt_1"}
+{"timestamp": "2026-11-17T23:51:35.946+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.06906432930013766, "batch": "2026-04", "feature": "pay_amt_3"}
+{"timestamp": "2026-11-17T23:51:35.946+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.058799386709835116, "batch": "2026-04", "feature": "pay_amt_2"}
+{"timestamp": "2026-11-17T23:51:35.947+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.05834323209231029, "batch": "2026-04", "feature": "age"}
+{"timestamp": "2026-11-17T23:51:35.947+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.04524874917662963, "batch": "2026-04", "feature": "bill_amt_1"}
+{"timestamp": "2026-11-17T23:51:35.947+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.028039830598469807, "batch": "2026-04", "feature": "bill_amt_2"}
+{"timestamp": "2026-11-17T23:51:35.948+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.023260645495686794, "batch": "2026-04", "feature": "bill_amt_4"}
+{"timestamp": "2026-11-17T23:51:35.948+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.01965992951547786, "batch": "2026-04", "feature": "bill_amt_3"}
+{"timestamp": "2026-11-17T23:51:35.949+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.017662970184097238, "batch": "2026-04", "feature": "bill_amt_5"}
+{"timestamp": "2026-11-17T23:51:35.949+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.014229365537698296, "batch": "2026-04", "feature": "bill_amt_6"}
+{"timestamp": "2026-11-17T23:51:35.949+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.0064406171511949654, "batch": "2026-04", "feature": "pay_status_4"}
+{"timestamp": "2026-11-17T23:51:35.950+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.0032202065363173913, "batch": "2026-04", "feature": "pay_status_6"}
+{"timestamp": "2026-11-17T23:51:35.950+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.0024525758117060798, "batch": "2026-04", "feature": "pay_status_5"}
+{"timestamp": "2026-11-17T23:51:35.950+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.0023164765651495314, "batch": "2026-04", "feature": "education"}
+{"timestamp": "2026-11-17T23:51:35.951+00:00", "run_id": "20261117T235103-d28f50", "metric": "dataset_drift_share", "value": 0.19047619047619047, "batch": "2026-04"}
+{"timestamp": "2026-11-17T23:51:35.951+00:00", "run_id": "20261117T235103-d28f50", "metric": "prediction_psi", "value": 0.13985317823634374, "batch": "2026-04"}
+{"timestamp": "2026-11-17T23:51:35.994+00:00", "run_id": "20261117T235103-d28f50", "metric": "perf_auc", "value": 0.7002288393536548, "batch": "2026-04"}
+{"timestamp": "2026-11-17T23:51:35.995+00:00", "run_id": "20261117T235103-d28f50", "metric": "perf_ks", "value": 0.3151257634162903, "batch": "2026-04"}
+{"timestamp": "2026-11-17T23:51:35.995+00:00", "run_id": "20261117T235103-d28f50", "metric": "perf_f1", "value": 0.5232919254658385, "batch": "2026-04"}
+{"timestamp": "2026-11-17T23:51:35.996+00:00", "run_id": "20261117T235103-d28f50", "metric": "perf_recall", "value": 0.4977843426883309, "batch": "2026-04"}
+{"timestamp": "2026-11-17T23:51:35.996+00:00", "run_id": "20261117T235103-d28f50", "metric": "perf_precision", "value": 0.5515548281505729, "batch": "2026-04"}
+{"timestamp": "2026-11-17T23:51:35.996+00:00", "run_id": "20261117T235103-d28f50", "metric": "perf_default_rate", "value": 0.3390085127691537, "batch": "2026-04"}
+{"timestamp": "2026-11-17T23:51:35.997+00:00", "run_id": "20261117T235103-d28f50", "metric": "perf_brier", "value": 0.20328836143016815, "batch": "2026-04"}
+{"timestamp": "2026-11-17T23:51:36.013+00:00", "run_id": "20261117T235103-d28f50", "metric": "fairness_di_age_band", "value": 0.9026859504132232, "batch": "2026-04"}
+{"timestamp": "2026-11-17T23:51:36.013+00:00", "run_id": "20261117T235103-d28f50", "metric": "fairness_eo_gap_age_band", "value": 0.08283854510269606, "batch": "2026-04"}
+{"timestamp": "2026-11-17T23:51:36.014+00:00", "run_id": "20261117T235103-d28f50", "metric": "fairness_di_sex", "value": 0.9724722859541758, "batch": "2026-04"}
+{"timestamp": "2026-11-17T23:51:36.015+00:00", "run_id": "20261117T235103-d28f50", "metric": "fairness_eo_gap_sex", "value": 0.005494505494505475, "batch": "2026-04"}
+{"timestamp": "2026-11-17T23:51:36.056+00:00", "run_id": "20261117T235103-d28f50", "metric": "contract_passed", "value": 1.0, "batch": "2026-05"}
+{"timestamp": "2026-11-17T23:51:36.056+00:00", "run_id": "20261117T235103-d28f50", "metric": "contract_violations", "value": 0.0, "batch": "2026-05"}
+{"timestamp": "2026-11-17T23:51:36.057+00:00", "run_id": "20261117T235103-d28f50", "metric": "contract_rules_violated", "value": 0.0, "batch": "2026-05"}
+{"timestamp": "2026-11-17T23:51:36.079+00:00", "run_id": "20261117T235103-d28f50", "metric": "rows_scored", "value": 1997.0, "batch": "2026-05"}
+{"timestamp": "2026-11-17T23:51:36.080+00:00", "run_id": "20261117T235103-d28f50", "metric": "approval_rate", "value": 0.6254381572358538, "batch": "2026-05"}
+{"timestamp": "2026-11-17T23:51:38.037+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.9113456523254402, "batch": "2026-05", "feature": "pay_status_3"}
+{"timestamp": "2026-11-17T23:51:38.038+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.6646251615209495, "batch": "2026-05", "feature": "pay_status_2"}
+{"timestamp": "2026-11-17T23:51:38.038+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.4705571894150594, "batch": "2026-05", "feature": "limit_bal"}
+{"timestamp": "2026-11-17T23:51:38.039+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.21537168245717522, "batch": "2026-05", "feature": "pay_status_1"}
+{"timestamp": "2026-11-17T23:51:38.039+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.16709321012490358, "batch": "2026-05", "feature": "age"}
+{"timestamp": "2026-11-17T23:51:38.039+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.1448271371803816, "batch": "2026-05", "feature": "pay_amt_6"}
+{"timestamp": "2026-11-17T23:51:38.040+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.1392311821543397, "batch": "2026-05", "feature": "pay_amt_2"}
+{"timestamp": "2026-11-17T23:51:38.040+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.13909473284937582, "batch": "2026-05", "feature": "pay_amt_5"}
+{"timestamp": "2026-11-17T23:51:38.041+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.1319800652298892, "batch": "2026-05", "feature": "pay_amt_1"}
+{"timestamp": "2026-11-17T23:51:38.041+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.11865140066205873, "batch": "2026-05", "feature": "pay_amt_4"}
+{"timestamp": "2026-11-17T23:51:38.042+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.08084168867522201, "batch": "2026-05", "feature": "pay_amt_3"}
+{"timestamp": "2026-11-17T23:51:38.042+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.05272134607592649, "batch": "2026-05", "feature": "bill_amt_1"}
+{"timestamp": "2026-11-17T23:51:38.043+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.04714775434262171, "batch": "2026-05", "feature": "bill_amt_2"}
+{"timestamp": "2026-11-17T23:51:38.043+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.03594728405286193, "batch": "2026-05", "feature": "bill_amt_3"}
+{"timestamp": "2026-11-17T23:51:38.044+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.0343534633950602, "batch": "2026-05", "feature": "bill_amt_6"}
+{"timestamp": "2026-11-17T23:51:38.044+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.032270096915174525, "batch": "2026-05", "feature": "bill_amt_5"}
+{"timestamp": "2026-11-17T23:51:38.045+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.030244092221722044, "batch": "2026-05", "feature": "bill_amt_4"}
+{"timestamp": "2026-11-17T23:51:38.045+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.011806274475122093, "batch": "2026-05", "feature": "pay_status_4"}
+{"timestamp": "2026-11-17T23:51:38.046+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.011435824234411043, "batch": "2026-05", "feature": "pay_status_6"}
+{"timestamp": "2026-11-17T23:51:38.046+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.00949588912777588, "batch": "2026-05", "feature": "pay_status_5"}
+{"timestamp": "2026-11-17T23:51:38.046+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.0014418525055498927, "batch": "2026-05", "feature": "education"}
+{"timestamp": "2026-11-17T23:51:38.047+00:00", "run_id": "20261117T235103-d28f50", "metric": "dataset_drift_share", "value": 0.47619047619047616, "batch": "2026-05"}
+{"timestamp": "2026-11-17T23:51:38.047+00:00", "run_id": "20261117T235103-d28f50", "metric": "prediction_psi", "value": 0.27062743703021375, "batch": "2026-05"}
+{"timestamp": "2026-11-17T23:51:38.097+00:00", "run_id": "20261117T235103-d28f50", "metric": "perf_auc", "value": 0.6681416349108271, "batch": "2026-05"}
+{"timestamp": "2026-11-17T23:51:38.097+00:00", "run_id": "20261117T235103-d28f50", "metric": "perf_ks", "value": 0.24681192636489868, "batch": "2026-05"}
+{"timestamp": "2026-11-17T23:51:38.098+00:00", "run_id": "20261117T235103-d28f50", "metric": "perf_f1", "value": 0.5255570117955439, "batch": "2026-05"}
+{"timestamp": "2026-11-17T23:51:38.098+00:00", "run_id": "20261117T235103-d28f50", "metric": "perf_recall", "value": 0.5154241645244216, "batch": "2026-05"}
+{"timestamp": "2026-11-17T23:51:38.098+00:00", "run_id": "20261117T235103-d28f50", "metric": "perf_precision", "value": 0.536096256684492, "batch": "2026-05"}
+{"timestamp": "2026-11-17T23:51:38.099+00:00", "run_id": "20261117T235103-d28f50", "metric": "perf_default_rate", "value": 0.3895843765648473, "batch": "2026-05"}
+{"timestamp": "2026-11-17T23:51:38.099+00:00", "run_id": "20261117T235103-d28f50", "metric": "perf_brier", "value": 0.2335493564605713, "batch": "2026-05"}
+{"timestamp": "2026-11-17T23:51:38.116+00:00", "run_id": "20261117T235103-d28f50", "metric": "fairness_di_age_band", "value": 0.9453349662699353, "batch": "2026-05"}
+{"timestamp": "2026-11-17T23:51:38.116+00:00", "run_id": "20261117T235103-d28f50", "metric": "fairness_eo_gap_age_band", "value": 0.0913593835993396, "batch": "2026-05"}
+{"timestamp": "2026-11-17T23:51:38.117+00:00", "run_id": "20261117T235103-d28f50", "metric": "fairness_di_sex", "value": 0.9925929633151493, "batch": "2026-05"}
+{"timestamp": "2026-11-17T23:51:38.117+00:00", "run_id": "20261117T235103-d28f50", "metric": "fairness_eo_gap_sex", "value": 0.05012372441154217, "batch": "2026-05"}
+{"timestamp": "2026-11-17T23:51:38.160+00:00", "run_id": "20261117T235103-d28f50", "metric": "contract_passed", "value": 1.0, "batch": "2026-06"}
+{"timestamp": "2026-11-17T23:51:38.160+00:00", "run_id": "20261117T235103-d28f50", "metric": "contract_violations", "value": 0.0, "batch": "2026-06"}
+{"timestamp": "2026-11-17T23:51:38.161+00:00", "run_id": "20261117T235103-d28f50", "metric": "contract_rules_violated", "value": 0.0, "batch": "2026-06"}
+{"timestamp": "2026-11-17T23:51:38.187+00:00", "run_id": "20261117T235103-d28f50", "metric": "rows_scored", "value": 1997.0, "batch": "2026-06"}
+{"timestamp": "2026-11-17T23:51:38.188+00:00", "run_id": "20261117T235103-d28f50", "metric": "approval_rate", "value": 0.5663495242864296, "batch": "2026-06"}
+{"timestamp": "2026-11-17T23:51:40.453+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 1.2117374165549193, "batch": "2026-06", "feature": "pay_status_3"}
+{"timestamp": "2026-11-17T23:51:40.454+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.875452611526639, "batch": "2026-06", "feature": "pay_status_2"}
+{"timestamp": "2026-11-17T23:51:40.454+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.7463293301713791, "batch": "2026-06", "feature": "limit_bal"}
+{"timestamp": "2026-11-17T23:51:40.455+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.3392670487343772, "batch": "2026-06", "feature": "pay_status_1"}
+{"timestamp": "2026-11-17T23:51:40.455+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.24894643464218316, "batch": "2026-06", "feature": "age"}
+{"timestamp": "2026-11-17T23:51:40.456+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.13997055112115347, "batch": "2026-06", "feature": "pay_amt_2"}
+{"timestamp": "2026-11-17T23:51:40.456+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.13464424110544998, "batch": "2026-06", "feature": "pay_amt_1"}
+{"timestamp": "2026-11-17T23:51:40.457+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.13440012200953116, "batch": "2026-06", "feature": "pay_amt_6"}
+{"timestamp": "2026-11-17T23:51:40.457+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.12826182001075878, "batch": "2026-06", "feature": "pay_amt_4"}
+{"timestamp": "2026-11-17T23:51:40.458+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.12149695836047658, "batch": "2026-06", "feature": "pay_amt_5"}
+{"timestamp": "2026-11-17T23:51:40.458+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.10458155479042339, "batch": "2026-06", "feature": "pay_amt_3"}
+{"timestamp": "2026-11-17T23:51:40.459+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.07189391627898184, "batch": "2026-06", "feature": "bill_amt_3"}
+{"timestamp": "2026-11-17T23:51:40.459+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.06614142332814152, "batch": "2026-06", "feature": "bill_amt_1"}
+{"timestamp": "2026-11-17T23:51:40.460+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.0624829130161082, "batch": "2026-06", "feature": "bill_amt_2"}
+{"timestamp": "2026-11-17T23:51:40.460+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.061155359350292884, "batch": "2026-06", "feature": "bill_amt_6"}
+{"timestamp": "2026-11-17T23:51:40.461+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.059416334429314974, "batch": "2026-06", "feature": "bill_amt_4"}
+{"timestamp": "2026-11-17T23:51:40.461+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.05313306313270792, "batch": "2026-06", "feature": "bill_amt_5"}
+{"timestamp": "2026-11-17T23:51:40.462+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.009278119723034146, "batch": "2026-06", "feature": "pay_status_4"}
+{"timestamp": "2026-11-17T23:51:40.463+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.0073515561102707894, "batch": "2026-06", "feature": "pay_status_5"}
+{"timestamp": "2026-11-17T23:51:40.463+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.007250824092327797, "batch": "2026-06", "feature": "pay_status_6"}
+{"timestamp": "2026-11-17T23:51:40.464+00:00", "run_id": "20261117T235103-d28f50", "metric": "psi", "value": 0.005210207900059538, "batch": "2026-06", "feature": "education"}
+{"timestamp": "2026-11-17T23:51:40.464+00:00", "run_id": "20261117T235103-d28f50", "metric": "dataset_drift_share", "value": 0.5238095238095238, "batch": "2026-06"}
+{"timestamp": "2026-11-17T23:51:40.465+00:00", "run_id": "20261117T235103-d28f50", "metric": "prediction_psi", "value": 0.49167168839044645, "batch": "2026-06"}
+{"timestamp": "2026-11-17T23:51:40.512+00:00", "run_id": "20261117T235103-d28f50", "metric": "perf_auc", "value": 0.6397839022989202, "batch": "2026-06"}
+{"timestamp": "2026-11-17T23:51:40.512+00:00", "run_id": "20261117T235103-d28f50", "metric": "perf_ks", "value": 0.20350179076194763, "batch": "2026-06"}
+{"timestamp": "2026-11-17T23:51:40.513+00:00", "run_id": "20261117T235103-d28f50", "metric": "perf_f1", "value": 0.5467869222096956, "batch": "2026-06"}
+{"timestamp": "2026-11-17T23:51:40.513+00:00", "run_id": "20261117T235103-d28f50", "metric": "perf_recall", "value": 0.5341409691629956, "batch": "2026-06"}
+{"timestamp": "2026-11-17T23:51:40.514+00:00", "run_id": "20261117T235103-d28f50", "metric": "perf_precision", "value": 0.5600461893764435, "batch": "2026-06"}
+{"timestamp": "2026-11-17T23:51:40.514+00:00", "run_id": "20261117T235103-d28f50", "metric": "perf_default_rate", "value": 0.45468202303455185, "batch": "2026-06"}
+{"timestamp": "2026-11-17T23:51:40.515+00:00", "run_id": "20261117T235103-d28f50", "metric": "perf_brier", "value": 0.2636208236217499, "batch": "2026-06"}
+{"timestamp": "2026-11-17T23:51:40.535+00:00", "run_id": "20261117T235103-d28f50", "metric": "fairness_di_age_band", "value": 0.8884613361849832, "batch": "2026-06"}
+{"timestamp": "2026-11-17T23:51:40.536+00:00", "run_id": "20261117T235103-d28f50", "metric": "fairness_eo_gap_age_band", "value": 0.07869093583379294, "batch": "2026-06"}
+{"timestamp": "2026-11-17T23:51:40.537+00:00", "run_id": "20261117T235103-d28f50", "metric": "fairness_di_sex", "value": 0.9216609061727857, "batch": "2026-06"}
+{"timestamp": "2026-11-17T23:51:40.537+00:00", "run_id": "20261117T235103-d28f50", "metric": "fairness_eo_gap_sex", "value": 0.039696031408738564, "batch": "2026-06"}

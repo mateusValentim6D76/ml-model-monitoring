@@ -1,0 +1,280 @@
+<!doctype html><html lang="pt-br"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Data Contract: 2026-03-incident</title>
+<style>
+ body{font-family:Segoe UI,Roboto,Helvetica,Arial,sans-serif;margin:0;background:#f6f8fa;color:#1f2328}
+ main{max-width:1100px;margin:auto;padding:24px 16px}
+ .badge{display:inline-block;padding:6px 14px;border-radius:999px;color:#fff;font-weight:600;background:#cf222e}
+ .card{background:#fff;border:1px solid #d0d7de;border-radius:10px;padding:16px 20px;margin:16px 0;overflow-x:auto}
+ table{border-collapse:collapse;width:100%;font-size:14px}
+ th,td{text-align:left;padding:8px 10px;border-bottom:1px solid #eaeef2;vertical-align:top}
+ th{background:#f6f8fa} .ok{color:#1a7f37;font-weight:600} .ko{color:#cf222e;font-weight:600}
+ .kpis{display:flex;gap:16px;flex-wrap:wrap} .kpi{flex:1;min-width:160px}
+ .kpi b{font-size:26px;display:block}
+</style></head><body><main>
+<h1>Data Contract <code>credit_scoring_contract_v1</code></h1>
+<p>Lote: <b>2026-03-incident</b> &nbsp; <span class="badge">BLOQUEADO</span></p>
+<div class="card kpis">
+ <div class="kpi">Registros no lote<b>2,012</b></div>
+ <div class="kpi">Violações encontradas<b>868</b></div>
+ <div class="kpi">Regras violadas<b>9 / 10</b></div>
+ <div class="kpi">Colunas recebidas<b>25</b></div>
+</div>
+<div class="card"><h2>Regras do contrato</h2>
+<table><tr><th>Regra</th><th>Descrição</th><th>Status</th><th>Violações</th></tr><tr><td><b>R1</b></td><td>Nenhum valor nulo</td><td class='ko'>✘ VIOLADA</td><td>25</td></tr><tr><td><b>R2</b></td><td>Idade entre 18 e 100 anos</td><td class='ko'>✘ VIOLADA</td><td>14</td></tr><tr><td><b>R3</b></td><td>Limite de crédito entre 10,000 e 1,000,000</td><td class='ko'>✘ VIOLADA</td><td>8</td></tr><tr><td><b>R4</b></td><td>Sem registros duplicados</td><td class='ko'>✘ VIOLADA</td><td>750</td></tr><tr><td><b>R5</b></td><td>customer_id único e pseudonimizado (cus_&lt;hmac&gt;)</td><td class='ko'>✘ VIOLADA</td><td>30</td></tr><tr><td><b>R6</b></td><td>Domínios categóricos válidos</td><td class='ko'>✘ VIOLADA</td><td>10</td></tr><tr><td><b>R7</b></td><td>Valores monetários dentro de limites (pagamentos &gt;= 0)</td><td class='ko'>✘ VIOLADA</td><td>5</td></tr><tr><td><b>R8</b></td><td>Schema estrito: sem colunas extras (ex.: PII)</td><td class='ko'>✘ VIOLADA</td><td>1</td></tr><tr><td><b>R9</b></td><td>Tipos inteiros sem coerção</td><td class='ko'>✘ VIOLADA</td><td>25</td></tr><tr><td><b>R10</b></td><td>Lote com &gt;= 100 registros</td><td class='ok'>✔ OK</td><td>0</td></tr></table></div>
+<div class="card"><h2>Detalhe das violações (Pandera)</h2><table class="dataframe tbl">
+  <thead>
+    <tr style="text-align: right;">
+      <th>rule</th>
+      <th>column</th>
+      <th>check</th>
+      <th>violations</th>
+      <th>examples</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>R1</td>
+      <td>limit_bal</td>
+      <td>not_nullable</td>
+      <td>25</td>
+      <td>nan</td>
+    </tr>
+    <tr>
+      <td>R2</td>
+      <td>age</td>
+      <td>in_range(18, 100)</td>
+      <td>14</td>
+      <td>14, 17, 15, 16, 150</td>
+    </tr>
+    <tr>
+      <td>R3</td>
+      <td>limit_bal</td>
+      <td>in_range(10000, 1000000)</td>
+      <td>8</td>
+      <td>9999999.0, -50000.0</td>
+    </tr>
+    <tr>
+      <td>R4</td>
+      <td>age</td>
+      <td>R4: registros duplicados</td>
+      <td>30</td>
+      <td>44, 37, 33, 41, 39</td>
+    </tr>
+    <tr>
+      <td>R4</td>
+      <td>bill_amt_1</td>
+      <td>R4: registros duplicados</td>
+      <td>30</td>
+      <td>65350, 34771, 3384, 281666, 208750</td>
+    </tr>
+    <tr>
+      <td>R4</td>
+      <td>bill_amt_2</td>
+      <td>R4: registros duplicados</td>
+      <td>30</td>
+      <td>128959, 4982, 23744, 981, -29</td>
+    </tr>
+    <tr>
+      <td>R4</td>
+      <td>bill_amt_3</td>
+      <td>R4: registros duplicados</td>
+      <td>30</td>
+      <td>0, 128690, 6259, 2934, 23236</td>
+    </tr>
+    <tr>
+      <td>R4</td>
+      <td>bill_amt_4</td>
+      <td>R4: registros duplicados</td>
+      <td>30</td>
+      <td>215697, 52552, 2622, 49236, 0</td>
+    </tr>
+    <tr>
+      <td>R4</td>
+      <td>bill_amt_5</td>
+      <td>R4: registros duplicados</td>
+      <td>30</td>
+      <td>69990, 15582, 52966, 128964, 0</td>
+    </tr>
+    <tr>
+      <td>R4</td>
+      <td>bill_amt_6</td>
+      <td>R4: registros duplicados</td>
+      <td>30</td>
+      <td>981, 71300, 27590, 20899, 257489</td>
+    </tr>
+    <tr>
+      <td>R4</td>
+      <td>cpf</td>
+      <td>R4: registros duplicados</td>
+      <td>30</td>
+      <td>180.962.320-68, 855.941.526-15, 908.104.959-74, 965.921.144-90, 909.613.234-47</td>
+    </tr>
+    <tr>
+      <td>R4</td>
+      <td>customer_id</td>
+      <td>R4: registros duplicados</td>
+      <td>30</td>
+      <td>cus_b63b2643ca4a6e0fc726477e, cus_4f5877ea1d50d543bab36b0f, cus_bb5f22ef932eac93e034cc3a, cus_7c39bc70e4c77f4df4b3b463, cus_9233c1d2fc7e5c2d3ddc3e3f</td>
+    </tr>
+    <tr>
+      <td>R4</td>
+      <td>education</td>
+      <td>R4: registros duplicados</td>
+      <td>30</td>
+      <td>2, 1, 3, 4</td>
+    </tr>
+    <tr>
+      <td>R4</td>
+      <td>limit_bal</td>
+      <td>R4: registros duplicados</td>
+      <td>30</td>
+      <td>90000.0, 170000.0, 390000.0, 200000.0, 160000.0</td>
+    </tr>
+    <tr>
+      <td>R4</td>
+      <td>marriage</td>
+      <td>R4: registros duplicados</td>
+      <td>30</td>
+      <td>1, 2</td>
+    </tr>
+    <tr>
+      <td>R4</td>
+      <td>pay_amt_1</td>
+      <td>R4: registros duplicados</td>
+      <td>30</td>
+      <td>0, 766, 2506, 4, 14339</td>
+    </tr>
+    <tr>
+      <td>R4</td>
+      <td>pay_amt_2</td>
+      <td>R4: registros duplicados</td>
+      <td>30</td>
+      <td>2238, 7522, 5321, 0, 9423</td>
+    </tr>
+    <tr>
+      <td>R4</td>
+      <td>pay_amt_3</td>
+      <td>R4: registros duplicados</td>
+      <td>30</td>
+      <td>10472, 0, 3976, 2954, 8950</td>
+    </tr>
+    <tr>
+      <td>R4</td>
+      <td>pay_amt_4</td>
+      <td>R4: registros duplicados</td>
+      <td>30</td>
+      <td>0, 4325, 1477, 1587, 8400</td>
+    </tr>
+    <tr>
+      <td>R4</td>
+      <td>pay_amt_5</td>
+      <td>R4: registros duplicados</td>
+      <td>30</td>
+      <td>20741, 895, 766, 646, 16447</td>
+    </tr>
+    <tr>
+      <td>R4</td>
+      <td>pay_amt_6</td>
+      <td>R4: registros duplicados</td>
+      <td>30</td>
+      <td>2148, 7658, 1574, 5370, 6265</td>
+    </tr>
+    <tr>
+      <td>R4</td>
+      <td>pay_status_1</td>
+      <td>R4: registros duplicados</td>
+      <td>30</td>
+      <td>-2, -1, 8, 2, 0</td>
+    </tr>
+    <tr>
+      <td>R4</td>
+      <td>pay_status_2</td>
+      <td>R4: registros duplicados</td>
+      <td>30</td>
+      <td>0, -2, 4, 7, -1</td>
+    </tr>
+    <tr>
+      <td>R4</td>
+      <td>pay_status_3</td>
+      <td>R4: registros duplicados</td>
+      <td>30</td>
+      <td>-2, -1, 0, 2, 7</td>
+    </tr>
+    <tr>
+      <td>R4</td>
+      <td>pay_status_4</td>
+      <td>R4: registros duplicados</td>
+      <td>30</td>
+      <td>2, -1, 4, 0, 7</td>
+    </tr>
+    <tr>
+      <td>R4</td>
+      <td>pay_status_5</td>
+      <td>R4: registros duplicados</td>
+      <td>30</td>
+      <td>3, -1, 0, -2, 7</td>
+    </tr>
+    <tr>
+      <td>R4</td>
+      <td>pay_status_6</td>
+      <td>R4: registros duplicados</td>
+      <td>30</td>
+      <td>-1, 2, 7, 0, -2</td>
+    </tr>
+    <tr>
+      <td>R4</td>
+      <td>sex</td>
+      <td>R4: registros duplicados</td>
+      <td>30</td>
+      <td>1, 2</td>
+    </tr>
+    <tr>
+      <td>R5</td>
+      <td>customer_id</td>
+      <td>field_uniqueness</td>
+      <td>30</td>
+      <td>cus_63b32db32ef98f6e64a5b964, cus_049f2b5e4f276af4a9994587, cus_7c39bc70e4c77f4df4b3b463, cus_0680bc90f874d49612249920, cus_af9a6a307ee0d5e5d2413822</td>
+    </tr>
+    <tr>
+      <td>R6</td>
+      <td>education</td>
+      <td>isin([1, 2, 3, 4])</td>
+      <td>6</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>R6</td>
+      <td>pay_status_1</td>
+      <td>in_range(-2, 8)</td>
+      <td>4</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>R7</td>
+      <td>pay_amt_1</td>
+      <td>in_range(0, 2000000)</td>
+      <td>5</td>
+      <td>-1500</td>
+    </tr>
+    <tr>
+      <td>R8</td>
+      <td>credit_scoring_contract_v1</td>
+      <td>column_in_schema</td>
+      <td>1</td>
+      <td>cpf</td>
+    </tr>
+    <tr>
+      <td>R9</td>
+      <td>limit_bal</td>
+      <td>dtype('int64')</td>
+      <td>25</td>
+      <td>nan</td>
+    </tr>
+  </tbody>
+</table></div>
+<div class="card"><h2>Política aplicada</h2>
+<p>O lote foi <b>bloqueado</b>: nenhuma predição foi gerada, os dados foram movidos para <code>data/quarantine/</code> e um alerta crítico foi registrado em <code>logs/alerts.jsonl</code>.</p>
+</div>
+<p style="color:#59636e;font-size:12px">Gerado em 2026-11-17 23:51 UTC</p>
+</main></body></html>

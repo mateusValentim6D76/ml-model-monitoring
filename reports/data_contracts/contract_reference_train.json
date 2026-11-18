@@ -1,0 +1,7 @@
+{
+  "batch": "reference_train",
+  "passed": true,
+  "n_rows": 13484,
+  "violations": 0,
+  "rules_violated": []
+}
