@@ -1,0 +1,69 @@
+{
+  "model_name": "credit-scoring-xgb",
+  "algorithm": "XGBClassifier",
+  "trained_at": "2026-11-17T23:51:10+00:00",
+  "training_run_id": "20261117T235103-d28f50",
+  "features": [
+    "limit_bal",
+    "age",
+    "bill_amt_1",
+    "bill_amt_2",
+    "bill_amt_3",
+    "bill_amt_4",
+    "bill_amt_5",
+    "bill_amt_6",
+    "pay_amt_1",
+    "pay_amt_2",
+    "pay_amt_3",
+    "pay_amt_4",
+    "pay_amt_5",
+    "pay_amt_6",
+    "education",
+    "pay_status_1",
+    "pay_status_2",
+    "pay_status_3",
+    "pay_status_4",
+    "pay_status_5",
+    "pay_status_6"
+  ],
+  "protected_attributes_excluded": [
+    "sex",
+    "marriage"
+  ],
+  "threshold": 0.30499999999999994,
+  "reference_metrics": {
+    "auc": 0.7696598707824839,
+    "gini": 0.5393197415649678,
+    "ks": 0.4132204055786133,
+    "pr_auc": 0.5364992075245867,
+    "f1": 0.5399698340874811,
+    "precision": 0.540241448692153,
+    "recall": 0.5396984924623116,
+    "brier": 0.13799412548542023,
+    "default_rate": 0.22135706340378197,
+    "predicted_default_rate": 0.2211345939933259,
+    "mean_score": 0.22129228711128235
+  },
+  "baseline_logreg_metrics": {
+    "auc": 0.7138249820531228,
+    "gini": 0.4276499641062457,
+    "ks": 0.375194544149318,
+    "pr_auc": 0.48436953030390817,
+    "f1": 0.5095095095095095,
+    "precision": 0.5074775672981057,
+    "recall": 0.5115577889447236,
+    "brier": 0.14740628073987572,
+    "default_rate": 0.22135706340378197,
+    "predicted_default_rate": 0.2231368186874305,
+    "mean_score": 0.2216186290778978
+  },
+  "fairness": {
+    "di_age_band": 0.8844905112413,
+    "eo_gap_age_band": 0.11934389140271495,
+    "di_sex": 0.9391527545124315,
+    "eo_gap_sex": 0.09427207637231505
+  },
+  "train_rows": 13484,
+  "test_rows": 4495,
+  "scale_pos_weight_observed": 3.520281595709018
+}
